@@ -1,0 +1,63 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primeira: #4A90E2;     /* Azul sereno, transmite confiança e foco */
+  --secundaria: #50E3C2;   /* Verde água, leve e refrescante */
+  --escuro: #2C3E50;       /* Azul petróleo, firme e profundo */
+  --maisescuro: #1A252F;   /* Azul quase preto, para contraste forte */
+  --claro: #F5F7FA;        /* Cinza muito claro, limpo e suave */
+  --vidro: #FFFFFFCC;      /* Branco translúcido (efeito vidro) */
+}
+
+body {
+  background-color: var(--escuro);
+  color: var(--claro);
+}
+
+.navegacao {
+  position: fixed;
+  top: 0;
+  background: rgb(15, 23, 42, 0.8);
+  width: 100%;
+  z-index: 100;
+  padding: 1.5rem;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 1.3rem;
+}
+
+.menu-link {
+  color: var(--claro);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.menu-link::after{
+  content: '';
+  height: 2px;
+  width: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, var(--primeira), var(--secundaria));
+  transition: width 0.5s ease;
+}
+
+.menu-link:hover::after{
+  width: 100%;
+}
