@@ -30,7 +30,7 @@ Você pode acessar o portfólio publicado aqui:
 
 ## 📬 Contato
 Se quiser trocar uma ideia ou conhecer mais sobre meu trabalho:  
-- **LinkedIn:** [Antônio Victor](https://www.linkedin.com/in/victorfreireavfs/)  
+- **LinkedIn:** [Antônio Victor](https://www.linkedin.com/in/ant%C3%B4nio-victor-freire/)  
 - **GitHub:** [victorfreireavfs](https://github.com/victorfreireavfs)  
 
 ---
