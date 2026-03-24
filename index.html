@@ -52,86 +52,125 @@
       </div>
     </section>
 
+    <!-- <a href="https://victorfreireavfs.github.io/projeto-cronometro/" target="_blank" rel="noopener noreferrer"></a> -->
+
     <section id="projetos" class="projetos">
       <h2 class="projetos-titulo">Meus Projetos</h2>
       <div class="projetos-caixa">
         <div class="projetos-card">
-          <img
-            src="./assets/img/preview_cron.jpeg"
-            alt="preview-cronometro"
-            class="projetos-imagem"
-          />
-          <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">Cronômetro</h3>
-            <p class="paragrafo-projetos">
-              Cronômetro interativo com modo-escuro, hora atual e links para
-              redes soiciais.
-            </p>
-          </div>
+          <a
+            href="https://github.com/victorfreireavfs/projeto-cronometro"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-projeto"
+          >
+            <img
+              src="./assets/img/preview_cron.jpeg"
+              alt="preview-cronometro"
+              class="projetos-imagem"
+            />
+
+            <div class="caixa-textos-projeto">
+              <h3 class="info-projetos">Cronômetro</h3>
+              <p class="paragrafo-projetos">
+                Cronômetro interativo com modo-escuro, hora atual e links para
+                redes soiciais.
+              </p>
+            </div>
+          </a>
         </div>
 
         <div class="projetos-card">
-          <img
-            src="./assets/img/preview_tlou.jpeg"
-            alt="preview-tlou"
-            class="projetos-imagem"
-          />
-          <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">The Last of Us</h3>
-            <p class="paragrafo-projetos">
-              Este é um projeto de jogo desenvolvido com HTML, CSS e JavaScript.
-              Possui funcionalidades de navegação e links para redes sociais.
-            </p>
-          </div>
+          <a
+            href="https://github.com/victorfreireavfs/projeto-the-last-of-us"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-projeto"
+          >
+            <img
+              src="./assets/img/preview_tlou.jpeg"
+              alt="preview-tlou"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projeto">
+              <h3 class="info-projetos">The Last of Us</h3>
+              <p class="paragrafo-projetos">
+                Este é um projeto de jogo desenvolvido com HTML, CSS e
+                JavaScript. Possui funcionalidades de navegação e links para
+                redes sociais.
+              </p>
+            </div>
+          </a>
         </div>
 
         <div class="projetos-card">
-          <img
-            src="./assets/img/preview_imc.png"
-            alt="preview-calculadora"
-            class="projetos-imagem"
-          />
-          <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">Calculadora de IMC</h3>
-            <p class="paragrafo-projetos">
-              Aplicação que calcula o Índice de Massa Corporal (IMC) com base no
-              peso e altura informados pelo usuário.
-            </p>
-          </div>
+          <a
+            href="https://github.com/victorfreireavfs/projeto-calculadora-imc?tab=readme-ov-file"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-projeto"
+          >
+            <img
+              src="./assets/img/preview_imc.png"
+              alt="preview-calculadora"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projeto">
+              <h3 class="info-projetos">Calculadora de IMC</h3>
+              <p class="paragrafo-projetos">
+                Aplicação que calcula o Índice de Massa Corporal (IMC) com base
+                no peso e altura informados pelo usuário.
+              </p>
+            </div>
+          </a>
         </div>
 
         <div class="projetos-card">
-          <img
-            src="./assets/img/preview_cad.jpeg"
-            alt="preview-cad"
-            class="projetos-imagem"
-          />
-          <div class="caixa-textos-projeto">
-            <h3 class="info-projetos">Cadastro de Usuários</h3>
-            <p class="paragrafo-projetos">
-              Simulação de um Sistema de Cadastro de Funcionários em Python.
-            </p>
-          </div>
+          <a
+            href="https://github.com/victorfreireavfs/projeto_cadastro_funcionarios"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="link-projeto"
+          >
+            <img
+              src="./assets/img/preview_cad.jpeg"
+              alt="preview-cad"
+              class="projetos-imagem"
+            />
+            <div class="caixa-textos-projeto">
+              <h3 class="info-projetos">Cadastro de Usuários</h3>
+              <p class="paragrafo-projetos">
+                Simulação de um Sistema de Cadastro de Funcionários em Python.
+              </p>
+            </div>
+          </a>
         </div>
       </div>
     </section>
 
     <section id="contatos" class="contatos">
       <h2 class="contatos-titulo">Entre em Contato</h2>
-      <form class="formulario-contato" id="formulario">
+      <form
+        class="formulario-contato"
+        id="formulario"
+        onsubmit="enviarWhats(event)"
+      >
         <div class="grupo-form">
-          <input placeholder="Nome" class="campo-form" />
+          <input placeholder="Nome" class="campo-form" id="nome" />
         </div>
 
         <div class="grupo-form">
           <textarea
             class="campo-form"
             placeholder="Digite sua mensagem aqui..."
+            id="mensagem"
+            rows="4"
           ></textarea>
         </div>
 
         <button type="submit" class="botao-form">Enviar WhatsApp</button>
       </form>
     </section>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
